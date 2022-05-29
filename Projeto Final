@@ -1,0 +1,136 @@
+using System;
+using OpenXmlPowerTools;
+
+namespace ProjetoFinal
+
+{
+    internal class Elevador
+
+    {
+        private string inicializar;
+        private string entrar;
+        private string subir;
+        private string descer;
+        private string sair;
+
+        static void Main(string[] args)
+        {
+            Elevador andar1 = new Elevador();
+            andar1.inicializar = "1";
+            andar1.entrar = "2";
+            andar1.subir = "3";
+            andar1.descer = "4";
+            andar1.sair = "5";
+
+            andar1.Subir();
+
+            Elevador andar2 = new Elevador();
+            andar2.inicializar = "2";
+            andar2.entrar = "3";
+            andar2.subir = "4";
+            andar2.descer = "5";
+            andar2.sair = "1";
+
+            andar2.Descer();
+
+        }
+
+        private void Subir()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Descer()
+        {
+            throw new NotImplementedException();
+        }
+
+        class andar1
+
+        {
+            public string inicializar;
+            public string entrar;
+            public string subir;
+            public string descer;
+            public string sair;
+            public int digite;
+
+
+            public void Andar()
+            {
+                DigitarAndarDesejado();
+
+            }
+
+            void SubirAteTerreo()
+            {
+
+
+            }
+
+            void DigitarAndarDesejado()
+            {
+
+
+            }
+
+
+        }
+
+
+        class Terreo : andar5
+        {
+            public string apertarbotao;
+
+
+
+        }
+
+        static void NumeroMaior()
+        {
+
+
+            Console.WriteLine("Digite andar desejado: ");
+
+            int andar1, andar2, andar3, andar4, andar5;
+
+            andar1 = int.Parse(Console.ReadLine());
+            andar2 = int.Parse(Console.ReadLine());
+            andar3 = int.Parse(Console.ReadLine());
+            andar4 = int.Parse(Console.ReadLine());
+            andar5 = int.Parse(Console.ReadLine());
+
+
+
+            int resultado = Maior(andar1, andar2, andar3, andar4, andar5);
+
+            Console.WriteLine("Maior = " + resultado);
+
+        }
+
+
+
+        static int Maior(int andar1, int andar2, int andar3, int andar4, int andar5)
+        {
+            int maiorNumero;
+
+            if (andar2 > andar1 && andar3 > andar2)
+            {
+                maiorNumero = andar3;
+            }
+            else if (andar3 > andar2)
+            {
+                maiorNumero = andar3;
+            }
+            else
+            {
+                maiorNumero = andar3;
+            }
+
+
+            return maiorNumero;
+        }
+
+    }
+
+}
